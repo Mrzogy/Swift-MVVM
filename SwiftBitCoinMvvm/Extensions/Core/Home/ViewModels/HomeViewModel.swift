@@ -1,0 +1,25 @@
+//
+//  HomeViewModel.swift
+//  SwiftBitCoinMvvm
+//
+//  Created by 3bood on 14/11/1444 AH.
+//
+
+import Foundation
+import Combine
+class HomeViewModel: ObservableObject {
+    @Published var allCoins: [CoinModel] = []
+    @Published var PortfolioCoins: [CoinModel] = []
+    private let dataService = CoinDataService()
+    private var cancellables = Set<AnyCancellable>()
+    init(){
+       addSubscribers()
+    }
+    func addSubscribers(){
+        dataService.$allCoins
+            .sink { [weak self](returnedCoins) in
+                self?.allCoins = returnedCoins
+            }
+            .store(in: &cancellables)
+    }
+}

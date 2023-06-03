@@ -12,6 +12,16 @@
 		B710057D2A2B75580016BB53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B710057C2A2B75580016BB53 /* Preview Assets.xcassets */; };
 		B71005842A2B9ABB0016BB53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71005832A2B9ABB0016BB53 /* Assets.xcassets */; };
 		B71005A42A2B9C290016BB53 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71005A32A2B9C290016BB53 /* Color.swift */; };
+		B71005AA2A2B9F8F0016BB53 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71005A92A2B9F8F0016BB53 /* HomeView.swift */; };
+		B71005AE2A2BA1490016BB53 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71005AD2A2BA1490016BB53 /* CircleButtonView.swift */; };
+		B71005B02A2BB1360016BB53 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71005AF2A2BB1360016BB53 /* CircleButtonAnimationView.swift */; };
+		B71005B32A2BBB080016BB53 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71005B22A2BBB080016BB53 /* CoinModel.swift */; };
+		B71005B52A2BC4590016BB53 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71005B42A2BC4590016BB53 /* CoinRowView.swift */; };
+		B71005B72A2BC5120016BB53 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71005B62A2BC5120016BB53 /* PreviewProvider.swift */; };
+		B71005B92A2BCE960016BB53 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71005B82A2BCE950016BB53 /* Double.swift */; };
+		B71005BB2A2BDB330016BB53 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71005BA2A2BDB330016BB53 /* HomeViewModel.swift */; };
+		B71005C02A2BE76E0016BB53 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71005BF2A2BE76E0016BB53 /* CoinDataService.swift */; };
+		B71005C22A2BF0EF0016BB53 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71005C12A2BF0EF0016BB53 /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +31,16 @@
 		B710057C2A2B75580016BB53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B71005832A2B9ABB0016BB53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		B71005A32A2B9C290016BB53 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B71005A92A2B9F8F0016BB53 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B71005AD2A2BA1490016BB53 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		B71005AF2A2BB1360016BB53 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
+		B71005B22A2BBB080016BB53 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		B71005B42A2BC4590016BB53 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		B71005B62A2BC5120016BB53 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		B71005B82A2BCE950016BB53 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		B71005BA2A2BDB330016BB53 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B71005BF2A2BE76E0016BB53 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		B71005C12A2BF0EF0016BB53 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +74,10 @@
 			isa = PBXGroup;
 			children = (
 				B71005752A2B75560016BB53 /* SwiftBitCoinMvvmApp.swift */,
+				B71005BE2A2BE7290016BB53 /* Services */,
+				B71005962A2B9BB90016BB53 /* Extensions */,
 				B71005772A2B75560016BB53 /* ContentView.swift */,
 				B71005832A2B9ABB0016BB53 /* Assets.xcassets */,
-				B71005962A2B9BB90016BB53 /* Extensions */,
 				B710057B2A2B75580016BB53 /* Preview Content */,
 			);
 			path = SwiftBitCoinMvvm;
@@ -74,8 +95,81 @@
 			isa = PBXGroup;
 			children = (
 				B71005A32A2B9C290016BB53 /* Color.swift */,
+				B71005B62A2BC5120016BB53 /* PreviewProvider.swift */,
+				B71005B82A2BCE950016BB53 /* Double.swift */,
+				B71005B12A2BBAB40016BB53 /* Models */,
+				B71005A52A2B9EFA0016BB53 /* Core */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B71005A52A2B9EFA0016BB53 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B71005AB2A2BA0E80016BB53 /* Components */,
+				B71005A62A2B9F060016BB53 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B71005A62A2B9F060016BB53 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B71005A82A2B9F620016BB53 /* ViewModels */,
+				B71005A72A2B9F4F0016BB53 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B71005A72A2B9F4F0016BB53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B71005A92A2B9F8F0016BB53 /* HomeView.swift */,
+				B71005B42A2BC4590016BB53 /* CoinRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B71005A82A2B9F620016BB53 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B71005BA2A2BDB330016BB53 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B71005AB2A2BA0E80016BB53 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B71005AC2A2BA11F0016BB53 /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B71005AC2A2BA11F0016BB53 /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				B71005AD2A2BA1490016BB53 /* CircleButtonView.swift */,
+				B71005AF2A2BB1360016BB53 /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
+			sourceTree = "<group>";
+		};
+		B71005B12A2BBAB40016BB53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B71005B22A2BBB080016BB53 /* CoinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B71005BE2A2BE7290016BB53 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B71005BF2A2BE76E0016BB53 /* CoinDataService.swift */,
+				B71005C12A2BF0EF0016BB53 /* NetworkingManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +242,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71005C02A2BE76E0016BB53 /* CoinDataService.swift in Sources */,
+				B71005B52A2BC4590016BB53 /* CoinRowView.swift in Sources */,
+				B71005BB2A2BDB330016BB53 /* HomeViewModel.swift in Sources */,
 				B71005782A2B75560016BB53 /* ContentView.swift in Sources */,
+				B71005AA2A2B9F8F0016BB53 /* HomeView.swift in Sources */,
 				B71005762A2B75560016BB53 /* SwiftBitCoinMvvmApp.swift in Sources */,
+				B71005AE2A2BA1490016BB53 /* CircleButtonView.swift in Sources */,
 				B71005A42A2B9C290016BB53 /* Color.swift in Sources */,
+				B71005C22A2BF0EF0016BB53 /* NetworkingManager.swift in Sources */,
+				B71005B02A2BB1360016BB53 /* CircleButtonAnimationView.swift in Sources */,
+				B71005B72A2BC5120016BB53 /* PreviewProvider.swift in Sources */,
+				B71005B92A2BCE960016BB53 /* Double.swift in Sources */,
+				B71005B32A2BBB080016BB53 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
